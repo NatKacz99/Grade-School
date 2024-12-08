@@ -2,8 +2,10 @@
 
 declare(strict_types=1);
 
+
 class School
 {
+    private $students = [];
     public function add(string $name, int $grade): void
     {
         $this->students[$grade][] = $name;
